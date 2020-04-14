@@ -1,0 +1,9 @@
+<?php
+define('DBHOST','LOCALHOST');
+define('DBUSHER','root');
+define('DBPASS','');
+define('DBNAME','boostrap');
+$dbconnect = new mysqli(DBHOST,DBUSHER,DBPASS,DBNAME);
+if ($dbconnect->connect_error){
+  die('Database Not Connect. Error:'.$dbconnect->connect_error);
+}
